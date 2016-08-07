@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Simple Responsive Page</title>
+
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/master.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-pull.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <h1 class="navbar-brand">For Real<br> &nbsp; Beer <br> Lovers</h1>
+        </div>
+        <div class="collapse navbar-collapse" id="collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Interesting stuff</a></li>
+            <li><a href="#">Shop</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <article>
+            <h2 class="article-title">Some interesting facts about beer</h2>
+
+            <div class="paragraphs">
+              <div class="first-paragraph" style="position: relative;">
+                <i class="fa fa-hand-o-right" style="font-size:24px; color: #bc9e6d; position: relative; top: 26px;"></i>
+                <p style="position: relative; width: 93%; left: 30px; margin-left: 5px;">The ancient Babylonians were the
+                  first to brew. They took beer so seriously, if someone brewed a bad batch, his punishment was to be
+                  drowned in it.
+                </p>
+              </div>
+              <div class="second-paragraph" style="position: relative">
+                <i class="fa fa-hand-o-right" style="font-size:24px; color: #bc9e6d; position: relative; top: 26px;"></i>
+                <p style="position: relative; width: 93%; left: 30px; margin-left: 5px;">In the Middle Ages clean water was
+                  often difficult to find, many people choose to drink beer instead because the alcohol made it safer
+                  than water.
+                </p>
+              </div>
+              <div class="third-paragraph" style="position: relative">
+                <i class="fa fa-hand-o-right" style="font-size:24px; color: #bc9e6d; position: relative; top: 26px;"></i>
+                <p style="position: relative; width: 93%; left: 30px; margin-left: 5px;">Beer is the world’s most widely
+                  consumed alcoholic beverage and the third-most popular drink overall (after water and tea). And
+                  beer is fat free.
+                </p>
+              </div>
+              <div class="fourth-paragraph" style="position: relative">
+                <i class="fa fa-hand-o-right" style="font-size:24px; color: #bc9e6d; position: relative; top: 26px;"></i>
+                <p style="position: relative; width: 93%; left: 30px; margin-left: 5px;">Norway first aircraft hijacking
+                  was resolved after the hijacker surrendered his weapon in exchange for more beer.
+                </p>
+              </div>
+              <div class="fifth-paragraph" style="position: relative">
+                <i class="fa fa-hand-o-right" style="font-size:24px; color: #bc9e6d; position: relative; top: 26px;"></i>
+                <p style="position: relative; width: 93%; left: 30px; margin-left: 5px;">The world´s strongest beer is
+                  Brewmeister´s „Snake Venom“. While regular beer usually have about 5% ABV, this Scottish killer has a
+                  stomach-burning 67,5% ABV.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <div id="arrows">
+            <div class="center">
+              <span id="prev">
+                <a href="#" class="pull-left left-arrow">
+                  <i class="fa fa-angle-left"></i>
+                </a>
+              </span>
+              <span id="next">
+                <a href="#" class="pull-left right-arrow">
+                  <i class="fa fa-angle-right"></i>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-5 col-md-offset-1">
+          <aside>
+            <div class="slider">
+              <div class="cycle-slideshow"
+              data-cycle-pager-template=
+              "<a class='thumb' href='#'><img src='{{src}}'></a>"
+              data-cycle-fx=scrollHorz
+              data-cycle-caption-plugin=caption2
+              data-cycle-pause-on-hover="true"
+              data-cycle-timeout=3000
+              data-cycle-prev="#prev"
+              data-cycle-next="#next">
+
+              <span class="cycle-pager"></span>
+              <div class="cycle-overlay"></div>
+
+              <img src="images/brew.jpg"
+              data-cycle-title="Brewery:" data-cycle-desc="the birthplace" alt="Brewery"/>
+              <img src="images/beer-barrel.jpg"
+              data-cycle-title="Barrel:" data-cycle-desc="the treasury" alt="Beer barrel"/>
+              <img src="images/beer.jpg"
+              data-cycle-title="Draught beer dispenser:" data-cycle-desc="the wellspring of joy" alt="Draught beer dispenser"/>
+              <img src="images/glass-of-beer.jpg"
+              data-cycle-title="Have a glass of beer:" data-cycle-desc="cheers!" alt="Glass of beer"/>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container-fluid">
+        <ul class="pull-left-sm list-unstyled list-inline">
+            <li><a href=" ">Contact</a></li>
+            <li><a href=" ">Address</a></li>
+            <li><a href=" ">Blog</a></li>
+        </ul>
+        <div class="pull-right-sm">&copy;2016 Copyright Information</div>
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
+  <script type="text/javascript" src="js/jquery.cycle2.min.js"></script>
+  <script type="text/javascript" src="js/jquery.cycle2.caption2.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,199 @@
+.navbar {
+  font-family: "Lora", serif;
+  background-color: #f2f2f2;
+}
+
+.navbar-header .navbar-brand {
+  color: #bc9e6d;
+  font-style: italic;
+  font-size: 32px;
+  margin-top: -5px;
+  margin-bottom: 40px;
+  padding-left: 40px;
+  text-shadow: 1px 1px #000000;
+}
+
+.navbar-header .navbar-toggle {
+  top: 11px;
+}
+
+.navbar .nav li a {
+  color: #bc9e6d;
+  font-size: 16px;
+  padding-right: 40px;
+  top: 15px;
+}
+
+
+.main {
+  padding-top: 100px;
+  padding-bottom: 70px;
+  background-color: #1b1b1b;
+}
+
+.article-title {
+  font-family: "Lora", serif;
+  font-size: 30px;
+  color: #bc9e6d;
+  font-style: italic;
+  text-align: center;
+}
+
+p {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: #fff;
+  text-align: left;
+}
+
+#arrows {
+  margin-top: 50px;
+}
+
+#arrows a {
+  padding: 0px 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #000;
+  margin-right: 10px;
+  font-size: 35px;
+}
+
+#arrows a:hover {
+  background-color: #bc9e6d;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+aside {
+  justify-content: center;
+  position: relative;
+  top: 10px;
+}
+
+
+.slider {
+  position: relative;
+  top: 40px;
+  width: 100%;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.cycle-slideshow {
+  max-width: 460px;
+  display: block;
+  position: relative;
+  margin: 50px auto;
+}
+
+.cycle-pager {
+  text-align: center;
+  display: block;
+  position: absolute;
+  bottom: 75px;
+  z-index: 999;
+  cursor: pointer;
+}
+
+.cycle-pager a {
+  display: inline-block;
+  margin: 0 5px;
+  opacity: .6;
+  border: 2px solid rgba(255, 255, 255, 0.30);
+}
+
+.cycle-pager .cycle-pager-active {
+  opacity: 1;
+  border: 2px solid rgba(255, 255, 255, 0.70);
+}
+
+.cycle-pager .thumb {
+  width: 12%;
+}
+
+.thumb {
+  display: block;
+}
+
+.cycle-overlay {
+  font-family: "Lora", sans-serif;
+  position: relative;
+  bottom: 0;
+  max-width: 460px;
+  z-index: 10;
+  background: #222;
+  color: #bc9e6d;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: italic;
+  text-align: center;
+}
+
+
+footer {
+  font-family: "Lora", serif;
+  background: #f2f2f2;
+  height: 70px;
+  font-size: 18px;
+  padding-top: 20px;
+}
+
+footer a {
+  padding: 5px;
+  color: #bc9e6d;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: #000000;
+}
+
+
+@media screen and (max-width: 1200px) {
+  .slider {
+    top: 100px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .main {
+    padding-bottom: 0;
+    padding-top: 90px;
+  }
+  .slider {
+    top: 0;
+  }
+  aside {
+    top: 0;
+  }
+  .navbar-header .navbar-brand {
+    padding-left: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  footer {
+    height: 90px;
+  }
+  .pull-right-sm {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 505px) {
+  .cycle-overlay {
+    font-size: 16px;
+  }
+  .cycle-pager .thumb {
+    margin-bottom: -10px;
+  }
+}
